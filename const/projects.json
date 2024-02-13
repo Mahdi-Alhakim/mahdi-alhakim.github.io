@@ -1,0 +1,122 @@
+[
+    {
+        "title": "Neural Networks Library",
+        "status": "",
+        "type":"img",
+        "image_url": "./resources/imgs/neural_net.jpg",
+        "tag":"Python | Numpy",
+        "description":"Library for seemless<br/> Neural Network Integration",
+        "time-frame":"",
+        "link":"https://github.com/Mahdi-Alhakim/NeuralNetworkLibrary"
+    },
+    {
+        "title": "Chess Game and Engine",
+        "status": "",
+        "type":"vid",
+        "image_url": "./resources/vids/chess_demo.mov",
+        "tag":"Python | Tkinter | Min-Max",
+        "description":"Chess Game Designed with Python and Tkinter,<br/> equipped with an AI engine using the Min-Max <br/> algorithm and optimized with Alpha-Beta pruning",
+        "time-frame":"",
+        "link":"https://github.com/Mahdi-Alhakim/ChessGame_withAI"
+    },
+    {
+        "title": "Flappy Bird with AI",
+        "status": "",
+        "type":"vid",
+        "image_url": "./resources/vids/flappy_demo.mov",
+        "tag":"Python | Tkinter | Own-Library",
+        "description":"A Self-Playing Flappy Bird game <br/> designed with Python and Tkinter <br/> and implemented through a genetic <br/>algorithm and reinforced learning",
+        "time-frame":"",
+        "link":"https://github.com/Mahdi-Alhakim/FlappyBird_ML"
+    },
+    {
+        "title": "TicTacToe with AI",
+        "status": "",
+        "type":"vid",
+        "image_url": "./resources/vids/tictactoe_demo.mov",
+        "tag":"Python | Tkinter | Min-Max",
+        "description":"Tic-Tac-Toe implemented with Python <br/> and Tkinter, with two-player <br/>and AI bot options",
+        "time-frame":"",
+        "link":"https://github.com/Mahdi-Alhakim/TicTacToe_AI"
+    },
+    {
+        "title": "Client-Server Liars Dice Game",
+        "status": "",
+        "type":"vid",
+        "image_url": "./resources/vids/liar_demo.mov",
+        "tag":"Python | Socket | Tkinter",
+        "description":"A multiplayer digital version of<br/>Liar's Dice using socket and a Client-Server Protocol",
+        "time-frame":"",
+        "link":"https://github.com/Mahdi-Alhakim/LiarsDice_ClientServer"
+    },
+    {
+        "title": "NodeJS Packet Sniffer",
+        "status": "",
+        "type":"img",
+        "image_url": "./resources/imgs/packets.jpg",
+        "tag":"NodeJS | MySQL",
+        "description":"A Node.js Microservice that captures,<br/>decrypts, and stores packets passing <br/> through the network in a MySQL database",
+        "time-frame":"",
+        "link":"https://github.com/Mahdi-Alhakim/PacketSniffer_NodeJS"
+    },
+    {
+        "title": "Python Flask Fuzzy Search APIs",
+        "status": "",
+        "type":"img",
+        "image_url": "./resources/imgs/fuzzy.jpg",
+        "tag":"Python | MongoDB | Swagger",
+        "description":"A swagger-generated Python Flask <br/>Microservice, with OpenAPI documentation,<br/>that performs fuzzy search  operations on<br/>a user database",
+        "time-frame":"",
+        "link":"https://github.com/Mahdi-Alhakim/FuzzySearch_Flask"
+    },
+    {
+        "title": "Original Matrix Puzzle Game",
+        "status": "",
+        "type":"vid",
+        "image_url": "./resources/vids/matrix_demo.mp4",
+        "tag":"Python | Tkinter | MySQL",
+        "description":"An original game made with Python<br/>and Tkinter, with a solver/checker that<br/>utilizes Matrix Math and custom AI algorithms,<br/>storing replays in MySQL",
+        "time-frame":"",
+        "link":"https://github.com/Mahdi-Alhakim/MatrixGame"
+    },
+    {
+        "title": "FPS DOOM Python Game",
+        "status": "",
+        "type":"vid",
+        "image_url": "./resources/vids/fps_demo.mov",
+        "tag":"Python | Tkinter",
+        "description":"FPS game developed with Python<br/>and Tkinter, including collision<br/>detection, ray tracing, 3D<br/>perspective GUI, projectiles, ...",
+        "time-frame":"",
+        "link":""
+    },
+    {
+        "title": "Unity Top Down Shooter Game",
+        "status": "Work in Progress",
+        "type":"vid",
+        "image_url": "./resources/vids/top_down_demo.mov",
+        "tag":"Unity | C#",
+        "description":"Top Down Shooter made with Unity and C#,<br/>with development of Scriptable Objects,<br/>enemies and projectiles,<br/>player and camera movement,<br/>as well as UX and gameplay",
+        "time-frame":"",
+        "link":"https://github.com/Mahdi-Alhakim/Unity_TopDownShooter"
+    },
+    {
+        "title": "Unity Turn Based Game",
+        "status": "Work in Progress",
+        "type":"vid",
+        "image_url": "./resources/vids/turn_based_demo.mp4",
+        "tag":"Unity | C#",
+        "description":"An In-development Turn-Based Game,<br/>focused on graphics and user experience",
+        "time-frame":"",
+        "link":"https://github.com/Mahdi-Alhakim/Unity_TurnBased"
+    },
+    {
+        "title": "Gymthetics App Prototype",
+        "status": "",
+        "type":"vid",
+        "image_url": "./resources/vids/gymthetics_demo.mov",
+        "tag":"Python | Tkinter",
+        "description":"Prototype implementation of a designed app<br/>that connects atheletes to Gyms,<br/>and provides motivation and scheduling features",
+        "time-frame":"",
+        "link":"https://github.com/Mahdi-Alhakim/Gymthetics"
+    }
+]

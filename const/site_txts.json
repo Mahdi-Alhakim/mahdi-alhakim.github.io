@@ -1,0 +1,14 @@
+{
+    "titles": "Software Developer | Full Stack Engineer | Computer Engineer | Game Developer | UI/UX Designer",
+    "experience": [
+        "Full Stack Developer at Cloud Gate Consulting DWC-LLC<br/><i style='color:white;font-size: max(5px, 0.6vw);'>July 2022 - PRESENT</i>", 
+        "Volunteer Teaching Assistant at AUB<br/>(Introduction to Programming, EECE 230)<br/><i style='color:white;font-size: max(5px, 0.6vw);'>Jan 2024 - PRESENT</i>",
+        "Self-Employed Personal Tutor for AUB students<br/>studying Python, C++, data structures and algorithms<br/><i style='color:white;font-size: max(5px, 0.6vw);'>Apr 2020 - Nov 2022</i>",
+        "The only student summer camp robotics teacher<br/>at the American Community School, Beirut<br/><i style='color:white;font-size: max(5px, 0.6vw);'>July 2018 - Aug 2018</i>"
+    ],
+    "latest": {
+        "achieved1": "Axis Connects<br/>Social Web App<br/><i style='font-size:1.5vw'>CGC DWC-LLC</i>",
+        "achieved2": "MedApp<br/>Medical Application<br/><i style='font-size:1.5vw'>CGC DWC-LLC</i>",
+        "achieved3": "Fennel<br/>Investing App<br/><i style='font-size:1.5vw'>CGC DWC-LLC</i>"
+    }
+}
