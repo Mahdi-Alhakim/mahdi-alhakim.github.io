@@ -731,4 +731,7 @@ object {
     font-size: min(2.5vw, 15px);
     width: auto;
   }
+  .section2 {
+    margin-top: 20vh
+  }
 }
