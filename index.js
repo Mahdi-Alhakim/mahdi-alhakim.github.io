@@ -106,9 +106,9 @@ function on_load() {
         `
     <a onclick="clickProj(this)" class="proj_card" name="${x["title"]}" id="${x["title"].replace(/\s/g, '')}" style="text-decoration: none;color:cyan;">
     ${(x["type"] == 'vid') ?
-    `<video onmouseenter="mouseinvid(this)" onmouseleave="mouseoutvid(this)" style="will-change:opacity;position:relative;left:0;top:0;opacity:0;height:100%;object-fit: fill;" autoplay muted loop id="myVideo">
+    `<video onmouseenter="mouseinvid(this)" onmouseleave="mouseoutvid(this)" style="will-change:opacity;position:relative;left:0;top:0;opacity:${window.innerWidth > 800 ? 0 : 100}%;height:100%;object-fit: fill;" autoplay muted loop id="myVideo">
             <source src="${x["image_url"]}" type="video/mp4">
-        </video>`:`<img src="${x["image_url"]}" onmouseenter="mouseinvid(this)" onmouseleave="mouseoutvid(this)" style="will-change:opacity;position:relative;left:0;top:0;opacity:0;height:100%;object-fit: fill;" id="myVideo">
+        </video>`:`<img src="${x["image_url"]}" onmouseenter="mouseinvid(this)" onmouseleave="mouseoutvid(this)" style="will-change:opacity;position:relative;left:0;top:0;opacity:${window.innerWidth > 800 ? 0 : 100}%;height:100%;object-fit: fill;" id="myVideo">
     </img>`}
         <div onmouseenter="mouseinvid(this.previousElementSibling)" onmouseleave="mouseoutvid(this.previousElementSibling)" style="cursor:pointer;position:relative;height:100%;display:flex;flex-direction:column;justify-content:center;top:-100%">
         <h3 style="color: white">${x["title"]}${x["status"] != 'Done' ? `<br><i style="font-size:0.6rem">${x["status"]}</i>` : ''}</h3>
@@ -136,7 +136,7 @@ function mouseinvid(x) {
 }
 
 function mouseoutvid(x) {
-    if (!x) return
+    if (!x || window.innerWidth <= 800) return
     x.style.opacity = "0.0";
 }
 function exitProj(proj) {
