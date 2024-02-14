@@ -395,10 +395,11 @@ h3[midinfo]{
 #about_me{
   font-size: max(6px, 1.4vw);
 }
+
 .exp_proj_title {
-  position:absolute;
-  margin:auto; 
-  translate: 0 -15vw;
+  width:100%;
+  flex-wrap: nowrap;
+  margin:0 auto;
   font-size: 5vw;
   font-family:cursive;
   color:lightcyan
@@ -412,10 +413,11 @@ h3[midinfo]{
   padding: 4vw;
   border-radius: 4vw;
   flex-direction: row;
+  flex-wrap:wrap;
   gap: 4vw
 }
 .achieved-card{
-  width:45%;
+  width:25%;
   height:55%;
   border-radius: 5vw;
   background: white;
@@ -619,6 +621,9 @@ input[button]:hover {
   text-align:start;
   align-items:start
 }
+.achieved_ones {
+  flex-direction: row
+}
 .about_edex {
   width: 100%;
   height:auto;
@@ -653,6 +658,14 @@ object {
   justify-content:center;
   align-items:center
 }
+.section2{
+  margin-bottom: 10vh
+}
+#thisOne1, #thisOne2, #thisOne3 {
+  font-size:2vw;
+  font-family:roboto;
+  color: #ccc6
+}
 @media screen and (max-width: 800px){
   .tab {
     left: 10vw;
@@ -660,6 +673,22 @@ object {
     margin-left: 0;
     width: 80vw;
     max-width: 80vw;
+  }
+  [latest-card] {
+    margin: 4vw;
+    padding: 4vw;
+    border-radius: 4vw;
+    flex-direction: column;
+    gap: 8vw;
+    height: max-content;
+  }
+  .achieved_ones {
+    flex-direction: column
+  }
+  .achieved-card{
+    width:50vw;
+    height:30vw;
+    background: white;
   }
   .present {
     padding-top: 10vh;
@@ -731,7 +760,16 @@ object {
     font-size: min(2.5vw, 15px);
     width: auto;
   }
+  .section1{
+    height: max-content;
+  }
   .section2 {
-    margin-top: 20vh
+    margin-top: 25vh;
+  }
+  .card.contact {
+    margin-top: 50vw;
+  }
+  #thisOne1, #thisOne2, #thisOne3 {
+    font-size: 4vw
   }
 }
