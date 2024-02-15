@@ -106,7 +106,7 @@ function on_load() {
         `
     <a onclick="clickProj(this)" class="proj_card" name="${x["title"]}" id="${x["title"].replace(/\s/g, '')}" style="text-decoration: none;color:cyan;">
     ${(x["type"] == 'vid') ?
-    `<video onmouseenter="mouseinvid(this)" onmouseleave="mouseoutvid(this)" style="will-change:opacity;position:relative;left:0;top:0;opacity:${window.innerWidth > 800 ? 0 : 100}%;height:100%;object-fit: fill;" autoplay muted loop id="myVideo">
+    `<video playinline onmouseenter="mouseinvid(this)" onmouseleave="mouseoutvid(this)" style="will-change:opacity;position:relative;left:0;top:0;opacity:${window.innerWidth > 800 ? 0 : 100}%;height:100%;object-fit: fill;" autoplay muted loop id="myVideo">
             <source src="${x["image_url"]}" type="video/mp4">
         </video>`:`<img src="${x["image_url"]}" onmouseenter="mouseinvid(this)" onmouseleave="mouseoutvid(this)" style="will-change:opacity;position:relative;left:0;top:0;opacity:${window.innerWidth > 800 ? 0 : 100}%;height:100%;object-fit: fill;" id="myVideo">
     </img>`}
@@ -149,7 +149,7 @@ function clickProj(proj) {
     document.getElementById("pop-up").innerHTML = `
         <div closeProj onclick='exitProj(this)'></div>
         <div style="margin:auto;width:50vw;height:50%;border-radius:1vw;border: 0.5vw solid darkcyan;transform: rotateZ(-4deg);background:#4449;box-shadow:0 0 3vw 4vw lightcyan">
-        ${(PROJ_INFO["type"] == 'vid' ? `<video poster="./resources/imgs/test.jpg" style="border-radius:1vw;height:100%;object-fit: contain" autoplay muted loop id="myVideo"><source src="${PROJ_INFO["image_url"]}" type="video/mp4"></video>` : `<img src="${PROJ_INFO["image_url"]}" style="border-radius:1vw;height:100%;object-fit: cover" />`)}
+        ${(PROJ_INFO["type"] == 'vid' ? `<video playinline poster="./resources/imgs/test.jpg" style="border-radius:1vw;height:100%;object-fit: contain" autoplay muted loop id="myVideo"><source src="${PROJ_INFO["image_url"]}" type="video/mp4"></video>` : `<img src="${PROJ_INFO["image_url"]}" style="border-radius:1vw;height:100%;object-fit: cover" />`)}
         </div>
         <div class="project-content">
             <p><strong>${PROJ_INFO["title"]}</strong><br/>${PROJ_INFO["time-frame"]}<br/>${PROJ_INFO["tag"]}<br/>${PROJ_INFO["status"]}<br/><article style="color:white;font-family:courier;width:fit-content;height:fit-content;background:#5520;border-radius:1vw;padding:1vw">${PROJ_INFO["description"]}</article></p>
