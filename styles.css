@@ -395,7 +395,9 @@ h3[midinfo]{
 #about_me{
   font-size: max(6px, 1.4vw);
 }
-
+p[midinfo]{
+  font-size: max(6px, 1vw);
+}
 .exp_proj_title {
   width:100%;
   flex-wrap: nowrap;
@@ -686,6 +688,9 @@ object {
   .achieved_ones {
     flex-direction: column
   }
+  h1[title]{
+    margin-top:15vh
+  }
   .achieved-card{
     width:55vw;
     height:30vw;
@@ -700,6 +705,16 @@ object {
   .proj_card {
     width: 80%;
     height: 35vw;
+  }
+  .about_me_home{
+    width:90%
+  }
+  #my_experience{
+    width:100%;
+    max-height: 40vw
+  }
+  p[midinfo]{
+    font-size:2vw
   }
   .profile_pic {
     margin-top: 20vh;
@@ -721,6 +736,14 @@ object {
   [contact]{
     margin-top: -10vw;
     gap:5vw;
+  }
+  .in-in {
+    flex-direction:column-reverse;
+    height:max-content;
+    padding:5vw
+  }
+  .body2-inner{
+    height:max-content;
   }
   .card.contact{
     width: 75vw
@@ -763,9 +786,6 @@ object {
   }
   .section1{
     height: max-content;
-  }
-  .section2 {
-    margin-top: 25vh;
   }
   .card.contact {
     margin-top: 50vw;
