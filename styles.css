@@ -651,7 +651,6 @@ h2 + h1 {
   display:flex;
   justify-content: center;
   align-items:center;
-  background:rgba(128, 128, 128, 0.712)
 }
 object {
   display:flex;
