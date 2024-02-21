@@ -20,7 +20,7 @@
         "link":"https://github.com/Mahdi-Alhakim/ChessGame_withAI"
     },
     {
-        "title": "Flappy Bird with AI",
+        "title": "Self-Playing Flappy Bird",
         "status": "",
         "type":"vid",
         "image_url": "./resources/vids/flappy_demo.mp4",
