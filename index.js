@@ -106,7 +106,7 @@ function on_load() {
         `
     <a onclick="clickProj(this)" class="proj_card" name="${x["title"]}" id="${x["title"].replace(/\s/g, '')}" style="text-decoration: none;color:cyan;">
     ${(x["type"] == 'vid') ?
-    `<video playsinline onmouseenter="mouseinvid(this)" onmouseleave="mouseoutvid(this)" style="will-change:opacity;position:relative;left:0;top:0;opacity:${window.innerWidth > 800 ? 0 : 100}%;height:100%;object-fit: fill;" autoplay muted loop id="myVideo">
+    `<video playinline onmouseenter="mouseinvid(this)" onmouseleave="mouseoutvid(this)" style="will-change:opacity;position:relative;left:0;top:0;opacity:${window.innerWidth > 800 ? 0 : 100}%;height:100%;object-fit: fill;" autoplay muted loop id="myVideo">
             <source src="${x["image_url"]}" type="video/mp4">
         </video>`:`<img src="${x["image_url"]}" onmouseenter="mouseinvid(this)" onmouseleave="mouseoutvid(this)" style="will-change:opacity;position:relative;left:0;top:0;opacity:${window.innerWidth > 800 ? 0 : 100}%;height:100%;object-fit: fill;" id="myVideo">
     </img>`}
@@ -123,7 +123,7 @@ function on_load() {
 site_text_data.then(function(result) {
     document.getElementById("titles").innerHTML = result["titles"];
     document.getElementById("my_experience").innerHTML = result["experience"].map(x => `
-    <p midinfo style="font-size: max(6px, 1vw);margin:1.5vw;width:70%;height:fit-content;padding:0.5vw;border-radius:4vw;box-shadow: inset 0 0 0.5vw 0.4vw gray, 0 0 1vw 0.3vw #222 ">${x}</p>
+    <p midinfo style="margin:1.5vw;width:70%;height:fit-content;padding:0.5vw;border-radius:4vw;box-shadow: inset 0 0 0.5vw 0.4vw gray, 0 0 1vw 0.3vw #222 ">${x}</p>
     `).join('');
     document.getElementById("thisOne1").innerHTML = result["latest"]["achieved1"];
     document.getElementById("thisOne2").innerHTML = result["latest"]["achieved2"];
@@ -149,7 +149,7 @@ function clickProj(proj) {
     document.getElementById("pop-up").innerHTML = `
         <div closeProj onclick='exitProj(this)'></div>
         <div style="margin:auto;width:50vw;height:50%;border-radius:1vw;border: 0.5vw solid darkcyan;transform: rotateZ(-4deg);background:#4449;box-shadow:0 0 3vw 4vw lightcyan">
-        ${(PROJ_INFO["type"] == 'vid' ? `<video playsinline poster="./resources/imgs/test.jpg" style="border-radius:1vw;height:100%;object-fit: contain" autoplay muted loop id="myVideo"><source src="${PROJ_INFO["image_url"]}" type="video/mp4"></video>` : `<img src="${PROJ_INFO["image_url"]}" style="border-radius:1vw;height:100%;object-fit: cover" />`)}
+        ${(PROJ_INFO["type"] == 'vid' ? `<video playsinline preload="auto" controls style="border-radius:1vw;height:100%;object-fit: contain" autoplay muted loop id="myVideo"><source src="${PROJ_INFO["image_url"]}" type="video/mp4"></video>` : `<img src="${PROJ_INFO["image_url"]}" style="border-radius:1vw;height:100%;object-fit: cover" />`)}
         </div>
         <div class="project-content">
             <p><strong>${PROJ_INFO["title"]}</strong><br/>${PROJ_INFO["time-frame"]}<br/>${PROJ_INFO["tag"]}<br/>${PROJ_INFO["status"]}<br/><article style="color:white;font-family:courier;width:fit-content;height:fit-content;background:#5520;border-radius:1vw;padding:1vw">${PROJ_INFO["description"]}</article></p>
